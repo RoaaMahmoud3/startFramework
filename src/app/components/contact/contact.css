@@ -1,0 +1,22 @@
+.form-control:focus {
+    border-color:transparent;
+    box-shadow: 0 0 0 0 transparent;
+}
+/* bottom */
+.btn:hover{
+    background-color: #1abc9c;
+    color: #fff;
+}
+/* media */
+/* SM to XXL -2000 */
+@media (max-width:2000px) and (min-width: 640px){
+    section{
+        padding-top:70px;
+    }
+}
+/*xs to phones */
+@media (max-width: 639px){
+    section{
+        padding-top:95px;
+    }
+}

@@ -1,0 +1,68 @@
+<section class="min-vh-100 ">
+    <div class="container py-5">
+        <div class="row h-100 justify-content-center align-items-center g-5">
+            <div class="col-md-12">
+                <h2 class="cap-h2 mb-4 text-center" style="color: #2C3E50;">PORTFOLIO COMPONENT</h2>
+                <div class="d-flex align-items-center justify-content-center mb-4 text-center">
+                    <div class="line-port me-3"></div>
+                    <i class="fa-solid fa-star fa-lg" style="color: #2C3E50;"></i>
+                    <div class="line-port ms-3"></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="rounded-3 overflow-hidden position-relative">
+                    <img src="images/port1.png" alt="house with garden" class="w-100">
+                    <div  class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x" (click)="openImg_Alt('images/port1.png','house with garden')"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="rounded-3 overflow-hidden position-relative">
+                    <img src="images/port2.png" alt="cake" class="w-100">
+                    <div  class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x" (click)="openImg_Alt('images/port2.png','cake')"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="rounded-3 overflow-hidden position-relative">
+                    <img src="images/port3.png" alt="red tent" class="w-100">
+                    <div  class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x" (click)="openImg_Alt('images/port3.png','red tent')"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="rounded-3 overflow-hidden position-relative">
+                    <img src="images/port1.png" alt="house with garden" class="w-100">
+                    <div  class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x" (click)="openImg_Alt('images/port1.png','house with garden')"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="rounded-3 overflow-hidden position-relative">
+                    <img src="images/port2.png" alt="cake" class="w-100">
+                    <div  class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x" (click)="openImg_Alt('images/port2.png','cake')"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="rounded-3 overflow-hidden position-relative">
+                    <img src="images/port3.png" alt="red tent" class="w-100">
+                    <div  class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x" (click)="openImg_Alt('images/port3.png','red tent')"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- model box -->
+    @if (selectedImg){
+        <div  (click)="selectedImg = null" class="model position-fixed start-0 top-0 w-100  h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center">
+            <img [alt]="selectedAlt" [src]="selectedImg" (click)="$event.stopPropagation()" style="width: 600px;">
+       </div>
+    }
+</section>

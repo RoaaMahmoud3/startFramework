@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+/*Colors */
+.dark-aqua{
+    background-color: #1abc9c;
+}
+.text-dark-aqua{
+    color: #1abc9c;
+}
+/* FONTS */
+.cap-h2{
+    color: #fff;
+    font-size:40px;
+    font-weight:700;
+}
+/* DRAWS */
+.line{
+    height: 4px;
+    width: 80px;
+    background: #fff;
+}
+.line-port,.line-contact{
+    height: 4px;
+    width: 80px;
+    background: #2C3E50;
+}

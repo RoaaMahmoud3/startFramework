@@ -1,0 +1,11 @@
+/* font */
+.font-h3{
+    font-size:28px;
+    font-weight:500;
+}
+/* body */
+.icon{
+    border: 1px white solid;
+    border-radius: 50%;
+    padding: 10px;
+}

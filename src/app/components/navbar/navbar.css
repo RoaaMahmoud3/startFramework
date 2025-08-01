@@ -1,0 +1,21 @@
+nav{
+    transition: .6s all;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+/* title */
+.title-nav{
+    color: #fff;
+    font-size: 32px;
+    font-weight:700;
+}
+/* links font */
+.link-nav{
+    color: #fff;
+    font-weight:700;
+}

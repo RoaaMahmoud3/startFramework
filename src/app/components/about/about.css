@@ -1,0 +1,6 @@
+/*xs to phones */
+@media (max-width: 639px){
+    section{
+        padding-top:80px;
+    }
+}

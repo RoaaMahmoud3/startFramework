@@ -1,0 +1,35 @@
+<section class="min-vh-100">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2 class="cap-h2 mb-4 text-center" style="color: #2C3E50;">CONTACT SECTION</h2>
+                <div class="d-flex align-items-center justify-content-center mb-5 text-center">
+                    <div class="line-contact me-3"></div>
+                    <i class="fa-solid fa-star fa-lg" style="color: #2C3E50;"></i>
+                    <div class="line-contact ms-3"></div>
+                </div>
+                <div class="pt-4">
+                    <div class="mb-4">
+                        @if(userName){
+                            <label for="userName" class="form-label text-dark-aqua " >userName :</label>
+                        }
+                        <input type="text" class="form-control border-0 border-bottom" id="userName" placeholder="userName" name="userName" [(ngModel)]="userName">
+                    </div>
+                    <div class="mb-4">
+                        @if (userAge) {<label for="userAge" class="form-label text-dark-aqua">userAge :</label>}
+                        <input type="number" class="form-control border-0 border-bottom" id="userAge" placeholder="userAge" name="userAge" [(ngModel)]="userAge">
+                    </div>
+                    <div class="mb-4">
+                        @if(userEmail){<label for="userEmail" class="form-label text-dark-aqua">userEmail :</label>}
+                        <input type="text" class="form-control border-0 border-bottom" id="userEmail" placeholder="userEmail" name="userEmail" [(ngModel)]="userEmail">
+                    </div>
+                    <div class="mb-4">
+                        @if (userPassword) {<label for="userPassword" class="form-label text-dark-aqua">userPassword :</label>}
+                        <input type="password" class="form-control border-0 border-bottom" id="userPassword" placeholder="userPassword" name="userPassword" [(ngModel)]="userPassword">
+                    </div>
+                    <button type="submit" class="btn  dark-aqua text-white mt-4">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
