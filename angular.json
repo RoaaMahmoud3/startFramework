@@ -43,7 +43,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/startFramework/"
+              "baseHref": "/"
             },
             "development": {
               "optimization": false,
